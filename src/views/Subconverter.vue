@@ -796,7 +796,7 @@ export default {
           const currentTheme = document.body.className.includes('dark-mode') ? 'dark' : 'light';
           try {
             twikoo.init({
-              envId: 'https://twikoo.zrf.me',
+              envId: 'https://twikoo.bsdan.dpdns.org',
               el: '#twikoo-comment',
               lang: 'zh-CN',
               theme: currentTheme
@@ -1305,3 +1305,4 @@ export default {
   display: none !important;
 }
 </style>
+
