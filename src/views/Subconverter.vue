@@ -811,7 +811,7 @@ export default {
   },
 
   created() {
-    document.title = "ZRF.ME | 在线订阅转换工具";
+    document.title = "BSDAN | 在线订阅转换工具";
     this.isPC = this.$getOS().isPc;
   },
   mounted() {
@@ -885,7 +885,7 @@ export default {
       }
     },
     tanchuang() {
-      this.$alert(`<div style="text-align:center; font-size: 16px;"><strong>周润发 | 提供维护:</strong> <a href="https://d.zrf.me/tgq" target="_blank" style="color: #409EFF; text-decoration: none;">TG群组</a> <a href="https://d.zrf.me/blog" target="_blank" style="color: #409EFF; text-decoration: none;">Blog</a></div>`, '信息面板', {
+      this.$alert(`<div style="text-align:center; font-size: 16px;"><strong>BSDAN 智能电子家居制造商 | 提供维护:</strong> <a href="https://hangdn.com" target="_blank" style="color: #409EFF; text-decoration: none;">TG群组</a> <a href="https://t.me/ben_mesa" target="_blank" style="color: #409EFF; text-decoration: none;">Blog</a></div>`, '信息面板', {
         confirmButtonText: '确定',
         dangerouslyUseHTMLString: true,
         customClass: 'msgbox'
@@ -1305,4 +1305,5 @@ export default {
   display: none !important;
 }
 </style>
+
 
