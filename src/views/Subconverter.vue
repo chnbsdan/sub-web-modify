@@ -14,12 +14,6 @@
             <svg-icon class="youguan" icon-class="youtube" style="float:right;margin-left:10px" @click="gotoYouTuBe" />
             <svg-icon class="channel" icon-class="telegram" style="float:right;margin-left: 10px"
               @click="gotoTgChannel" />
-              <div class="converter-container">
-    <div class="logo-container">
-      <div class="logo-wrapper">
-        <img src="https://tc.1356666.xyz/file/1755410653958_hangdn.png" alt="Logo" class="logo" />
-        <!-- 粒子环绕 -->
-        <span v-for="n in 8" :key="n" class="particle"></span>
             <div style="text-align:center;font-size:15px">订 阅 转 换</div>
           </div>
           <el-container>
@@ -1293,10 +1287,6 @@ export default {
     }
   }
 };
-
-  export default {
-  name: "Converter"
-}
 </script>
 
 <style>
@@ -1314,72 +1304,7 @@ export default {
 .tk-input-image {
   display: none !important;
 }
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 20px;
-}
-
-.logo-wrapper {
-  position: relative;
-  width: 80px;
-  height: 80px;
-}
-
-.logo {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  z-index: 2;
-  position: relative;
-  box-shadow: 0 0 20px #00f, 0 0 40px #0ff, 0 0 60px #f0f;
-  animation: pulse 3s infinite ease-in-out;
-}
-
-/* 粒子基础样式 */
-.particle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 6px;
-  height: 6px;
-  background: #0ff;
-  border-radius: 50%;
-  box-shadow: 0 0 8px #0ff, 0 0 15px #f0f;
-  transform-origin: -40px;
-  animation: orbit 6s linear infinite;
-}
-
-/* 粒子环绕动画 */
-@keyframes orbit {
-  from { transform: rotate(0deg) translateX(40px) rotate(0deg); }
-  to   { transform: rotate(360deg) translateX(40px) rotate(-360deg); }
-}
-
-/* 呼吸发光 */
-@keyframes pulse {
-  0%, 100% { transform: scale(1); box-shadow: 0 0 20px #0ff; }
-  50% { transform: scale(1.1); box-shadow: 0 0 50px #f0f; }
-}
-
-/* 不同粒子延迟时间，让它们错位 */
-.particle:nth-child(2) { animation-delay: 0.5s; }
-.particle:nth-child(3) { animation-delay: 1s; }
-.particle:nth-child(4) { animation-delay: 1.5s; }
-.particle:nth-child(5) { animation-delay: 2s; }
-.particle:nth-child(6) { animation-delay: 2.5s; }
-.particle:nth-child(7) { animation-delay: 3s; }
-.particle:nth-child(8) { animation-delay: 3.5s; }
-
-.title {
-  font-size: 28px;
-  font-weight: bold;
-}
-  
 </style>
-
-
 
 
 
