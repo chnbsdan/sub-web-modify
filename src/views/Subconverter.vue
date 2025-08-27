@@ -1314,9 +1314,6 @@ export default {
 .tk-input-image {
   display: none !important;
 }
-</style>
-
-<style scoped>
 .logo-container {
   display: flex;
   align-items: center;
@@ -1379,7 +1376,10 @@ export default {
   font-size: 28px;
   font-weight: bold;
 }
-</style>                
+  
+</style>
+
+
 
 
 
